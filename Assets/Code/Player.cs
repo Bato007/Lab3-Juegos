@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     {
         rgb = GetComponent<Rigidbody>();
 
-        score = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<GameObject>();
+        score = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
     }
 
     // Update is called once per frame
