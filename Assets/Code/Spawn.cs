@@ -8,8 +8,8 @@ public class Spawn : MonoBehaviour
 {
 
     // Instanciar
-    public GameObject prefab;
-    private GameObject newObj;
+    //public GameObject prefab;
+   // private GameObject newObj;
 
     Vector3 startPosition;
 
@@ -20,17 +20,17 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1.0f;
-        startPosition = gameObject.transform.position;
-        newObj = Instantiate(prefab, startPosition, Quaternion.identity);
+        //startPosition = gameObject.transform.position;
+        //newObj = Instantiate(prefab, startPosition, Quaternion.identity);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Return) && !newObj)
+        /*if (Input.GetKey(KeyCode.Return) && !newObj)
         {
             newObj = Instantiate(prefab, startPosition, Quaternion.identity);
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
